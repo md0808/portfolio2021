@@ -27,7 +27,7 @@ const Memories = () => {
       <PageTitle>Memories</PageTitle>
       <Grid container justify="center" className={classes.text}>
         <Grid item justify="flex-start">
-          <Typography paragraph className={classes.paragrah}>
+          <Typography paragraph color="textPrimary"  className={classes.paragrah}>
             I'm going to post a bunch of pictures from travels etc.
           </Typography>
         </Grid>

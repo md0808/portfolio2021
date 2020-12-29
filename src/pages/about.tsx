@@ -22,7 +22,7 @@ const About = () => {
       <PageTitle>About Monica</PageTitle>
       <Grid container justify="center" className={classes.text}>
         <Grid item justify="flex-start">
-          <Typography paragraph>
+          <Typography color="textPrimary"  paragraph>
             This is where I'm going to write some things about myself and put a
             picture
           </Typography>

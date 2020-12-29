@@ -1,42 +1,35 @@
-import React from "react"
+import React, { useState } from "react"
 import {
-  createMuiTheme,
   makeStyles,
   ThemeProvider,
 } from "@material-ui/core/styles"
 import CustomizedMenu from "./menu"
-
-export const mainTheme = createMuiTheme({
-  palette: {
-    primary: {
-      light: "#9891ed",
-      main: "#756dd9",
-      dark: "#584fc9",
-    },
-    secondary: {
-      light: "#b5ffe1",
-      main: "#a4fcd9",
-      dark: "#7dffca",
-    },
-    warning: {
-      light: "#f8c0fa",
-      main: "#efa3f2",
-      dark: "#ec81f0",
-    },
-    textPrimary: {
-      light: "#4a4a4a",
-      main: "#303030",
-      dark: "#262626",
-    },
-  },
-})
+import CssBaseline from "@material-ui/core/CssBaseline"
+import Brightness4 from '@material-ui/icons/Brightness4'
+import IconButton from "@material-ui/core/IconButton"
+import {darkTheme, mainTheme} from './themes'
+import Img from "gatsby-image"
+import {graphql, useStaticQuery} from 'gatsby'
+import Link from './link'
 
 const useStyles = makeStyles(theme => ({
-  root: {
+  content: {
     flexGrow: 1,
     margin: 20,
   },
-  menuBar: {
+  logo: {
+    marginLeft: theme.spacing(2),
+    display: "flex",
+    justifyContent: "flex-start",
+  },
+  topBar: {
+    display: "flex",
+    flexDirection: "row",
+    width: '100%',
+    justifyContent: "space-between",
+    alignContent: "center",
+  },
+  menu: {
     display: "flex",
     justifyContent: "flex-end",
   },
@@ -44,12 +37,53 @@ const useStyles = makeStyles(theme => ({
 
 const Layout = ({ children }) => {
   const classes = useStyles()
+  const [isLightTheme, setIsLightTheme] = useState(true)
+  const toggleTheme = () => {
+    setIsLightTheme((isLightTheme)=> !isLightTheme)
+    // once redux is set up, this will need to be dispatched to store, and default state will be redux state.
+  }
+  const data = useStaticQuery(graphql`
+    query Images {
+     image: file(relativePath: {eq: "mdLogo.png"}) {
+        id
+        childImageSharp {
+          fixed (
+            width: 100
+            ){
+            ...GatsbyImageSharpFixed
+          }
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+  console.log('data', data.image)
 
+  const theme = isLightTheme? mainTheme : darkTheme
   return (
-    <ThemeProvider theme={mainTheme}>
-      <div className={classes.root}>
-        <div className={classes.menuBar}>
-          <CustomizedMenu />
+    <ThemeProvider theme={theme}>
+         <CssBaseline />
+      <div className={classes.content}>
+        <div className={classes.topBar}>
+          <div className={classes.logo}>
+            <Link to="/">
+            <Img fixed={data.image.childImageSharp.fixed} alt="Monica Dixon Logo"/>
+            </Link>
+          </div>
+          <div className={classes.menu}>
+            <IconButton
+            aria-controls="customized-menu"
+            aria-haspopup="true"
+            edge="edge"
+            color="primary"
+            aria-label="light-theme"
+            onClick={toggleTheme}>
+              <Brightness4 fontSize="large" />
+            </IconButton>
+            <CustomizedMenu />
+          </div>
         </div>
         {children}
       </div>

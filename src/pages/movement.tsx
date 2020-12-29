@@ -26,7 +26,7 @@ const Movement = () => {
       <PageTitle>Movement and Wellness</PageTitle>
       <Grid container justify="center" className={classes.text}>
         <Grid item justify="flex-start">
-          <Typography paragraph className={classes.paragrah}>
+          <Typography paragraph className={classes.paragrah} color="textPrimary" >
             I'll write some things about my yoga classes and whatever else I do
           </Typography>
         </Grid>

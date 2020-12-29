@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Monica Dixon`,
+    description: `Art, design, web development, mobile development, yoga, prenatal yoga, technology, blog `,
+    author: `Monica Dixon`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,7 +18,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `monica-dixon-portfolio`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,

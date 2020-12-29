@@ -94,6 +94,7 @@ const renderMenuItem = (itemName, icon, link) => {
 const CustomizedMenu = () => {
   const classes = useStyles()
   const [anchorEl, setAnchorEl] = useState(null)
+
   const onMenuClick = e => {
     setAnchorEl(e.currentTarget)
   }
@@ -101,8 +102,10 @@ const CustomizedMenu = () => {
     setAnchorEl(null)
   }
 
+
   return (
     <div>
+
       <IconButton
         aria-controls="customized-menu"
         aria-haspopup="true"
@@ -112,7 +115,7 @@ const CustomizedMenu = () => {
         aria-label="menu"
         onClick={onMenuClick}
       >
-        <MenuIcon size="large" />
+        <MenuIcon fontSize="large" />
       </IconButton>
       <StyledMenu
         id="customized-menu"

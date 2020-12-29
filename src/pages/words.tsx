@@ -25,7 +25,7 @@ const Words = () => {
       <PageTitle>Words (blog)</PageTitle>
       <Grid container justify="center" className={classes.text}>
         <Grid item justify="flex-start">
-          <Typography paragraph className={classes.paragrah}>
+          <Typography paragraph color="textPrimary" className={classes.paragrah}>
             I'm finna start a little blog.
           </Typography>
         </Grid>

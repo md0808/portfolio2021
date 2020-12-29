@@ -19,11 +19,11 @@ const Art = () => {
   const classes = useStyles()
   return (
     <Layout>
-      <SEO title="Art" />
+      <SEO title="Art and Design" />
       <PageTitle>Art and Design</PageTitle>
       <Grid container justify="center" className={classes.text}>
         <Grid item justify="flex-start">
-          <Typography paragraph>
+          <Typography color="textPrimary"  paragraph>
             This is where I will post some documentation of my artwork.
             (Collages, Sculptures, Public installations, Masks, other)
           </Typography>
