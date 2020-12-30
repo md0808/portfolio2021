@@ -4,6 +4,7 @@ import {
 
 export const mainTheme = createMuiTheme({
     palette: {
+    // type: "light",
       primary: {
         light: "#9891ed",
         main: "#756dd9",
@@ -22,6 +23,9 @@ export const mainTheme = createMuiTheme({
       text: {
         primary:  "#303030", 
     },
+    background: {
+        default: "#FFF"
+      }
     },
   })
   

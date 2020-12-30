@@ -1,12 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
-import PageTitle from "../components/pageTitle"
 import SEO from "../components/seo"
 import { makeStyles } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
 import Typography from "@material-ui/core/Typography"
 import Mutant from '../images/mutant_gif_full.gif'
-// import Mutant from '../images/mutant01.png'
 import useWindowDimensions from '../utils/getDimensions'
 
 
@@ -39,7 +37,7 @@ export default function Index() {
       <Grid container justify="center" className={classes.text}>
         <Grid item justify="flex-start">
           <Typography color="textPrimary" paragraph className={classes.paragrah}>
-            Thanks for taking time to be here :)
+            Thanks for taking time to be here
           </Typography>
         </Grid>
       </Grid>

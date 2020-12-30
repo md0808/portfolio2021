@@ -21,6 +21,7 @@ const useStyles = makeStyles(theme => ({
     marginLeft: theme.spacing(2),
     display: "flex",
     justifyContent: "flex-start",
+    width: 102
   },
   topBar: {
     display: "flex",
@@ -48,7 +49,7 @@ const Layout = ({ children }) => {
         id
         childImageSharp {
           fixed (
-            width: 100
+            width: 102
             ){
             ...GatsbyImageSharpFixed
           }
