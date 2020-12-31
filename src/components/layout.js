@@ -77,7 +77,7 @@ const Layout = ({ children }) => {
             <IconButton
             aria-controls="customized-menu"
             aria-haspopup="true"
-            edge="edge"
+            edge="start"
             color="primary"
             aria-label="light-theme"
             onClick={toggleTheme}>

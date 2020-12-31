@@ -82,7 +82,7 @@ const StyledMenuItem = withStyles(theme => ({
 
 const renderMenuItem = (itemName, icon, link) => {
   return (
-    <Link to={link}>
+    <Link to={link} key={itemName}>
       <StyledMenuItem>
         <ListItemIcon color="primary">{icon}</ListItemIcon>
         <ListItemText primary={itemName} />
