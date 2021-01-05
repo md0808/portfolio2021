@@ -11,7 +11,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
 import Email from '@material-ui/icons/Email'
 import Instagram from '@material-ui/icons/Instagram'
-import Youtube from '@material-ui/icons/Youtube'
+import YouTube from '@material-ui/icons/YouTube'
 import LinkedIn from '@material-ui/icons/LinkedIn'
 
 const useStyles = makeStyles(theme => ({
@@ -69,7 +69,7 @@ const About = () => {
             </ListItem> 
             <ListItem button  onClick={onYogaYouTube}>
               <ListItemIcon>
-                <Youtube />
+                <YouTube />
               </ListItemIcon>
               <ListItemText primary="Yoga Youtube" secondary="a few recorded Zoom yoga classes" />
             </ListItem>
