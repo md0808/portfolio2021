@@ -8,6 +8,7 @@ import PageTitle from "../components/pageTitle"
 import { makeStyles } from "@material-ui/core/styles"
 import { graphql } from 'gatsby'
 
+
 const useStyles = makeStyles(theme => ({
     text: {
       marginTop: 30,
@@ -16,6 +17,7 @@ const useStyles = makeStyles(theme => ({
     },
     paragrah: {
       maxWidth: 600,
+      minWidth: 400,
     },
   }))
 
@@ -34,9 +36,16 @@ const Template = ({data}) => {
                     <Link to="/words">Back to Words (blog)</Link>
                 </Grid>
                 <Grid item justify="flex-start">
+      
                 <Typography color="textPrimary" paragraph className={classes.paragrah}>
                     <div dangerouslySetInnerHTML={{ __html: post.html}}>
                     </div>
+                </Typography>
+                <Typography color="textSecondary" variant="h6" className={classes.paragrah}>
+                   {post.frontmatter.category}
+                </Typography>
+                <Typography color="textSecondary" paragraph className={classes.paragrah}>
+                   Posted by {post.frontmatter.author} on {post.frontmatter.date}
                 </Typography>
                 </Grid>
             </Grid>
@@ -53,6 +62,7 @@ export const postQuery = graphql `
                 title
                 category
                 date
+                author
             }
         }
     }

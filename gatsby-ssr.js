@@ -1,7 +1,16 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/ssr-apis/
- */
+const React = require("react")
+// const { Provider } = require("react-redux")
+const GlobalContextProvider = require('./src/context/GlobalContextProvider')
 
-// You can delete this file if you're not using it
+const createStore = require("./src/state/createStore")
+// const store = createStore()
+
+exports.wrapRootElement = ({ element }) => {
+  return (
+    // <Provider store={store}>
+    <GlobalContextProvider>
+        {element}
+    </GlobalContextProvider>
+    // </Provider>
+  )
+}

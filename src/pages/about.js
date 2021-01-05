@@ -5,15 +5,6 @@ import SEO from "../components/seo"
 import PageTitle from "../components/pageTitle"
 import { makeStyles } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import Divider from '@material-ui/core/Divider';
-import Email from '@material-ui/icons/Email'
-import Instagram from '@material-ui/icons/Instagram'
-import Youtube from '@material-ui/icons/Youtube'
-import LinkedIn from '@material-ui/icons/LinkedIn'
 
 const useStyles = makeStyles(theme => ({
   text: {
@@ -25,6 +16,26 @@ const useStyles = makeStyles(theme => ({
     maxWidth: 600,
   },
 }))
+
+const onEmail = () => {
+  navigator.clipboard.writeText("monica.dixon8@gmail.com")
+}
+const onYogaInsta = (e) => {
+  e.preventDefault();
+  window.location.href='https://www.instagram.com/monicajdixon/';
+}
+const onYogaYouTube = (e) => {
+  e.preventDefault();
+  window.location.href='https://www.youtube.com/channel/UCVgIYq5liRSB46JDoFiwF2Q';
+}
+const onArtInsta = (e) => {
+  e.preventDefault();
+  window.location.href='https://www.instagram.com/_monicadixon_/';
+}
+const onLinkedIn = (e) => {
+  e.preventDefault();
+  window.location.href='https://www.linkedin.com/in/monicadixon888/';
+}
 
 const About = () => {
   const classes = useStyles()
@@ -43,45 +54,28 @@ const About = () => {
           </Typography>
           <Typography color="textPrimary" className={classes.paragrah} paragraph>
             After that, I returned to the US, and spent some time living on the East coast
-            in New York and Massachusetts.
+            in New York and Massachusetts. I lived and worked at the Kripalu School of Yoga and Ayurveda, where I later
+            became a certified yoga teacher. Following that experience, I spent three months in India, during
+            which I completed my first (and likely my last) Vipassana.
           </Typography>
-          <Divider />
-          <Typography variant="h5" className={classes.text}>
-            Connect or say hi.
+          <Typography color="textPrimary" className={classes.paragrah} paragraph>
+            I moved back to Kansas City in 2015. Upon returning I focused on building a career out of 
+            teaching yoga and making art. I was a two-time resident artist with the Charlotte Street Foundation.
+            I received grants, commissions, and awards from Art in the Loop, Winthrop Rockefeller Institute, and
+            the Crossroads Hotel to create large scale public art works.
+            In tandem with making visual art, I combined my interests in making and moving when I created and
+             organized local community events, called "Temenos", which involved groups of people wearing elaborate 
+             masks I made out of fabric participating in what I termed experimental movement workshops.
           </Typography>
-          <List component="nav" aria-label="main mailbox folders">
-            <ListItem button>
-              <ListItemIcon>
-                <Email />
-              </ListItemIcon>
-              <ListItemText primary="Email" />
-            </ListItem>
-            <ListItem button>
-              <ListItemIcon>
-                <Instagram />
-              </ListItemIcon>
-              <ListItemText primary="Yoga Instagram" />
-            </ListItem> 
-            <ListItem button>
-              <ListItemIcon>
-                <Youtube />
-              </ListItemIcon>
-              <ListItemText primary="Yoga Youtube" />
-            </ListItem>
-            <ListItem button>
-              <ListItemIcon>
-                <Instagram />
-              </ListItemIcon>
-              <ListItemText primary="Art Instagram" />
-            </ListItem>
-            <ListItem button>
-              <ListItemIcon>
-                <LinkedIn />
-              </ListItemIcon>
-              <ListItemText primary="LinkedIn" />
-            </ListItem>
-         </List>
-         <Divider />
+          <Typography color="textPrimary" className={classes.paragrah} paragraph>
+            In 2019 I enrolled in a web development coding bootcamp. This was a transformative experience that allowed
+            me to take my interest in creating things for people in a new direction. In summer 2020, I started as 
+            a web development intern with Bounteous, and have been working as a full time developer ever since.
+          </Typography>
+          <Typography color="textPrimary" className={classes.paragrah} paragraph>
+            These days, when I'm not working on apps, I'm making art, dancing around, doing yoga, making kombucha, tending indoor and outdoor gardens,
+            looking for laughs, going on long walks, and trying to spend at least a little time reading actual books.
+          </Typography>
         </Grid>
       </Grid>
     </Layout>

@@ -14,6 +14,8 @@ import IconButton from "@material-ui/core/IconButton"
 import MenuIcon from "@material-ui/icons/Menu"
 import Home from "@material-ui/icons/Home"
 import Link from "./link"
+import Fingerprint from '@material-ui/icons/Fingerprint'
+
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -66,6 +68,7 @@ const menuOptions = [
     icon: <EmojiPeople color="primary" />,
     link: "/about",
   },
+  { title: "Contact", icon: <Fingerprint color="primary" />, link: "/contact" }, 
   { title: "Home", icon: <Home color="primary" />, link: "/" },
 ]
 

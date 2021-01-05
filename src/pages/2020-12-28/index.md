@@ -15,6 +15,7 @@ Brand new to me:
 
 - Gatsby
 - GraphQL
+- Netlify
 
 Had some experience, trying to learn new things:
 
@@ -22,6 +23,5 @@ Had some experience, trying to learn new things:
 - React
 - Redux
 - Typescript
-- Netlify
 
 Logo and homepage gif were made last year with Adobe inDesign and Photoshop

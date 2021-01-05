@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import { makeStyles } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
 import Typography from "@material-ui/core/Typography"
-import Link from "gatsby-link"
+import Link from "../components/link"
 
 const useStyles = makeStyles(theme => ({
   text: {
@@ -27,7 +27,7 @@ const Technology = () => {
       <Grid container justify="center" className={classes.text}>
         <Grid item justify="flex-start">
           <Typography paragraph color="textPrimary" className={classes.paragrah}>
-            I am frontend developer with <Link to="https://www.bounteous.com/">
+            I am a frontend developer with <Link to="https://www.bounteous.com/">
               Bounteous
             </Link>.{" "} I love working with React.js, I spend most of my time working remotely with lots of 
             talented people creating web and mobile apps for industry leading companies. 
@@ -37,11 +37,10 @@ const Technology = () => {
             <Link to="https://md0808.github.io/projects.html">
               Here's my first github portfolio
             </Link>{" "} that I made during that time.
-            Not particularly proud of it, but not embarrassed of it, you know?
           </Typography>
           <Typography paragraph color="textPrimary" className={classes.paragrah}>
-          <Link to="/20201228">
-              Here's some information on this site. </Link>  
+          <Link to="/20201228" color="primary">
+              Here's what I used for this site. </Link>  
           </Typography>
 
         </Grid>

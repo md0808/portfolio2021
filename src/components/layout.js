@@ -1,4 +1,5 @@
-import React, { useState } from "react"
+import React, { useContext } from "react"
+import {GlobalDispatchContext, GlobalStateContext} from '../context/GlobalContextProvider'
 import {
   makeStyles,
   ThemeProvider,
@@ -37,11 +38,14 @@ const useStyles = makeStyles(theme => ({
 }))
 
 const Layout = ({ children }) => {
+  const dispatch = useContext(GlobalDispatchContext)
+  const state = useContext(GlobalStateContext)
   const classes = useStyles()
-  const [isLightTheme, setIsLightTheme] = useState(true)
+  // const [isLightTheme, setIsLightTheme] = useState(s)
+  console.log('dispatch', dispatch)
   const toggleTheme = () => {
-    setIsLightTheme((isLightTheme)=> !isLightTheme)
-    // once redux is set up, this will need to be dispatched to store, and default state will be redux state.
+    dispatch({type: "TOGGLE_THEME"})
+    // setIsLightTheme((isLightTheme)=> !isLightTheme)
   }
   const data = useStaticQuery(graphql`
     query Images {
@@ -62,7 +66,7 @@ const Layout = ({ children }) => {
   `)
   console.log('data', data.image)
 
-  const theme = isLightTheme? mainTheme : darkTheme
+  const theme = state.theme === "light" ? mainTheme : darkTheme
   return (
     <ThemeProvider theme={theme}>
          <CssBaseline />
