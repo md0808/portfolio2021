@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => ({
 const Template = ({data}) => {
     const classes = useStyles()
     
-    const post = data.markdownRemark
+    const post = data && data.markdownRemark
     return (
         <Layout>
             <SEO title={post.frontmatter.title} />
@@ -67,5 +67,6 @@ export const postQuery = graphql `
         }
     }
 `
+
 
 export default Template

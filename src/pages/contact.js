@@ -25,28 +25,35 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-const onEmail = () => {
-  navigator.clipboard.writeText("monica.dixon8@gmail.com")
-}
-const onYogaInsta = (e) => {
-  e.preventDefault();
-  window.location.href='https://www.instagram.com/monicajdixon/';
-}
-const onYogaYouTube = (e) => {
-  e.preventDefault();
-  window.location.href='https://www.youtube.com/channel/UCVgIYq5liRSB46JDoFiwF2Q';
-}
-const onArtInsta = (e) => {
-  e.preventDefault();
-  window.location.href='https://www.instagram.com/_monicadixon_/';
-}
-const onLinkedIn = (e) => {
-  e.preventDefault();
-  window.location.href='https://www.linkedin.com/in/monicadixon888/';
-}
-
 const About = () => {
   const classes = useStyles()
+
+  const emailCopy = () => {
+    // if (navigator){
+      navigator.clipboard.writeText("monica.dixon8@gmail.com")
+    // }
+  }
+  const openYogaInsta = () => {
+    if (typeof window !== `undefined`) {
+      window.location.href='https://www.instagram.com/monicajdixon/';
+    }
+  }
+  const openYoutube = () => {
+    if (typeof window !== `undefined`) {
+      window.location.href='https://www.youtube.com/channel/UCVgIYq5liRSB46JDoFiwF2Q';
+    }
+  }
+  const openArtInsta = () => {
+    if (typeof window !== `undefined`) {
+      window.location.href='https://www.instagram.com/_monicadixon_/';
+    }
+    
+  }
+  const openLinkedin = () => {
+    if (typeof window !== `undefined`) {
+    window.location.href='https://www.linkedin.com/in/monicadixon888/';
+    }
+  }
   return (
     <Layout>
       <SEO title="About" />
@@ -55,31 +62,31 @@ const About = () => {
         <Grid item justify="flex-start">
           <Divider />
           <List component="nav" aria-label="contact">
-            <ListItem button onClick={onEmail}>
+            <ListItem button onClick={emailCopy}>
               <ListItemIcon>
                 <Email />
               </ListItemIcon>
               <ListItemText primary="monica.dixon8@gmail.com" secondary="(click to copy)" />
             </ListItem>
-            <ListItem button onClick={onYogaInsta}>
+            <ListItem button onClick={openYogaInsta}>
               <ListItemIcon>
                 <Instagram />
               </ListItemIcon>
               <ListItemText primary="Yoga Instagram" secondary="not very serious self promotion" />
             </ListItem> 
-            <ListItem button  onClick={onYogaYouTube}>
+            <ListItem button  onClick={openYoutube}>
               <ListItemIcon>
                 <YouTube />
               </ListItemIcon>
               <ListItemText primary="Yoga Youtube" secondary="a few recorded Zoom yoga classes" />
             </ListItem>
-            <ListItem button onClick={onArtInsta}>
+            <ListItem button onClick={openArtInsta}>
               <ListItemIcon>
                 <Instagram />
               </ListItemIcon>
               <ListItemText primary="Art Instagram" secondary="documentation and so forth"/>
             </ListItem>
-            <ListItem button  onClick={onLinkedIn}>
+            <ListItem button  onClick={openLinkedin}>
               <ListItemIcon>
                 <LinkedIn />
               </ListItemIcon>

@@ -17,26 +17,6 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-const onEmail = () => {
-  navigator.clipboard.writeText("monica.dixon8@gmail.com")
-}
-const onYogaInsta = (e) => {
-  e.preventDefault();
-  window.location.href='https://www.instagram.com/monicajdixon/';
-}
-const onYogaYouTube = (e) => {
-  e.preventDefault();
-  window.location.href='https://www.youtube.com/channel/UCVgIYq5liRSB46JDoFiwF2Q';
-}
-const onArtInsta = (e) => {
-  e.preventDefault();
-  window.location.href='https://www.instagram.com/_monicadixon_/';
-}
-const onLinkedIn = (e) => {
-  e.preventDefault();
-  window.location.href='https://www.linkedin.com/in/monicadixon888/';
-}
-
 const About = () => {
   const classes = useStyles()
   return (
