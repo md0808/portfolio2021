@@ -64,7 +64,7 @@ const Art = () => {
 
           </Grid>
         <Grid item className={classes.gallery}>
-        <Gallery photos={photos1} onClick={openLightbox} targetRowHeight={400} />
+        {/* <Gallery photos={photos1} onClick={openLightbox} targetRowHeight={400} />
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
@@ -78,7 +78,7 @@ const Art = () => {
             />
           </Modal>
         ) : null}
-      </ModalGateway>
+      </ModalGateway> */}
         </Grid>
       </Grid>
         </Layout>

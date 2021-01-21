@@ -7,7 +7,7 @@ import Grid from "@material-ui/core/Grid"
 import Typography from "@material-ui/core/Typography"
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import {photos} from '../images/artLargeCollage'
+// import {photos} from '../images/artLargeCollage'
 import Link from '../components/link'
 
 
@@ -59,7 +59,7 @@ const Art = () => {
           </Typography>         
         </Grid>
         <Grid item className={classes.gallery}>
-        <Gallery photos={photos} onClick={openLightbox} targetRowHeight={600} />
+        {/* <Gallery photos={photos} onClick={openLightbox} targetRowHeight={600} />
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
@@ -73,7 +73,7 @@ const Art = () => {
             />
           </Modal>
         ) : null}
-      </ModalGateway>
+      </ModalGateway> */}
         </Grid>
       </Grid>
         </Layout>
