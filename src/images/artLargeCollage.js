@@ -1,6 +1,6 @@
-import One from '../images/artwork/LargeCollage/Bedlam.jpg'
-import Two from '../images/artwork/LargeCollage/IMG_5704.jpg'
-import Three from '../images/artwork/LargeCollage/StreetcarCeiling.jpg'
+import One from '../images/artwork/largeCollage/Bedlam.jpg'
+import Two from '../images/artwork/largeCollage/IMG_5704.jpg'
+import Three from '../images/artwork/largeCollage/StreetcarCeiling.jpg'
 
 
 export const photos = [
