@@ -4,7 +4,6 @@ import {
 
 export const mainTheme = createMuiTheme({
     palette: {
-    // type: "light",
       primary: {
         light: "#9891ed",
         main: "#756dd9",
@@ -16,10 +15,26 @@ export const mainTheme = createMuiTheme({
         dark: "#7dffca",
       },
       warning: {
-        light: "#f8c0fa",
-        main: "#efa3f2",
-        dark: "#ec81f0",
+        light: "#f8fabe",
+        main: "#fcffa3",
+        dark: "#f9fc8d",
       },
+      error: {
+        light: "#f8b9fa",
+        main: "#efa3f2",
+        dark: "##f561fa",
+      },
+      info: {
+        light: "#b5ffe1",
+        main: "#a4fcd9",
+        dark: "#7dffca",
+      },
+      success: {
+        light: "#b5ffe1",
+        main: "#a4fcd9",
+        dark: "#7dffca",
+      },
+
       text: {
         primary:  "#303030", 
     },

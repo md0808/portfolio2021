@@ -22,6 +22,7 @@ export default function Index() {
     },
     mutant: {
       width: width * 1.3,
+      resizeMode: 'scale',
     },
     imgContainer:{
       display: "flex",

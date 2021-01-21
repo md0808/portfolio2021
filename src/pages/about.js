@@ -25,6 +25,9 @@ const About = () => {
       <PageTitle>About Monica</PageTitle>
       <Grid container alignItems="center" justify="center" className={classes.text}>
         <Grid item justify="flex-start">
+        <Typography color="textPrimary" className={classes.paragrah}  paragraph>
+            I'm an artist, movement enthusiast, and technologist based in Kansas City. 
+          </Typography>
           <Typography color="textPrimary" className={classes.paragrah}  paragraph>
             I was born on 8.8.88 in West Plains, Missouri, USA. I moved to Kansas City after high
             school to attend the Kansas City Art Institute where I earned a BFA in painting. I spent a 
@@ -51,10 +54,11 @@ const About = () => {
             In 2019 I enrolled in a web development coding bootcamp. This was a transformative experience that allowed
             me to take my interest in creating things for people in a new direction. In summer 2020, I started as 
             a web development intern with Bounteous, and have been working as a full time developer ever since.
+        
           </Typography>
           <Typography color="textPrimary" className={classes.paragrah} paragraph>
             These days, when I'm not working on apps, I'm making art, dancing around, doing yoga, making kombucha, tending indoor and outdoor gardens,
-            looking for laughs, going on long walks, and trying to spend at least a little time reading actual books.
+            looking for laughs, going on long walks, and starting books that I occasionally finish.
           </Typography>
         </Grid>
       </Grid>

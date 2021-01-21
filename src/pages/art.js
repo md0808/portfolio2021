@@ -1,13 +1,12 @@
-import React, {useState, useCallback} from "react"
+import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PageTitle from "../components/pageTitle"
 import { makeStyles } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
 import Typography from "@material-ui/core/Typography"
-import Gallery from "react-photo-gallery";
-import Carousel, { Modal, ModalGateway } from "react-images";
-import {photos} from '../images/artPhotos'
+import Button from "@material-ui/core/Button"
+import Link from '../components/link'
 
 
 const useStyles = makeStyles(theme => ({
@@ -29,19 +28,6 @@ const useStyles = makeStyles(theme => ({
 const Art = () => {
   const classes = useStyles()
 
-  const [currentImage, setCurrentImage] = useState(0);
-  const [viewerIsOpen, setViewerIsOpen] = useState(false);
-
-  const openLightbox = useCallback((event, { photo, index }) => {
-    setCurrentImage(index);
-    setViewerIsOpen(true);
-  }, []);
-
-  const closeLightbox = () => {
-    setCurrentImage(0);
-    setViewerIsOpen(false);
-  };
-
   return (
     <Layout>
       <SEO title="Art and Design" />
@@ -49,25 +35,41 @@ const Art = () => {
       <Grid container justify="center" alignItems="center" className={classes.text} direction="column">
         <Grid item>
           <Typography color="textPrimary"  className={classes.paragraph} paragraph>
-            Here's a gallery of collages made from magazines. More work will be posted soon.
-          </Typography>         
+            These categories seem at odds with each other, but I think the work makes the most sense together.
+          </Typography>  
+          <Grid item>
+            <Link to="/art-magazine-collage">
+            <Button color="primary" variant="contained">Collage Prints</Button>
+            </Link>
+            </Grid>  
+            <Grid item>
+            <Link to="/art-large-collage">
+            <Button color="secondary" variant="contained">Collage Installations</Button>
+            </Link>
+            </Grid>  
+            <Grid item>
+            <Link to="/art-outdoor">
+            <Button color="warning" variant="contained">Outdoor Installations</Button>
+            </Link>
+            </Grid> 
+            <Grid item>
+            <Link to="/art-2016">
+            <Button color="error" variant="contained">First year of Residence at with Charlotte Street</Button>
+            </Link>
+            </Grid>   
+            <Grid item>
+            <Link to="/art-temenos">
+            <Button color="primary" variant="contained">Temenos (masks and experimental movement workshops) </Button>
+            </Link>
+            </Grid>  
+            <Grid item>
+            <Link to="/art-2011">
+            <Button color="primary" variant="contained">Final year of art school</Button>
+            </Link>
+            </Grid>       
         </Grid>
+        
         <Grid item className={classes.gallery}>
-        <Gallery photos={photos} onClick={openLightbox} targetRowHeight={400} />
-      <ModalGateway>
-        {viewerIsOpen ? (
-          <Modal onClose={closeLightbox}>
-            <Carousel
-              currentIndex={currentImage}
-              views={photos.map(x => ({
-                ...x,
-                srcset: x.srcSet,
-                caption: x.title
-              }))}
-            />
-          </Modal>
-        ) : null}
-      </ModalGateway>
         </Grid>
       </Grid>
         </Layout>
