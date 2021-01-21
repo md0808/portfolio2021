@@ -54,12 +54,12 @@ const Art = () => {
             </Grid> 
             <Grid item>
             <Link to="/art-2016">
-            <Button color="error" variant="contained">First year of Residence at with Charlotte Street</Button>
+            <Button color="error" variant="outlined">First year of Residence at with Charlotte Street</Button>
             </Link>
             </Grid>   
             <Grid item>
             <Link to="/art-temenos">
-            <Button color="primary" variant="contained">Temenos (masks and experimental movement workshops) </Button>
+            <Button color="success" variant="contained">Temenos (masks and experimental movement workshops) </Button>
             </Link>
             </Grid>  
             <Grid item>
