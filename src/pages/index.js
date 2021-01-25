@@ -27,7 +27,10 @@ export default function Index() {
 
     },
     mutant: {
-      width: width * 1.3,
+      flex: 1,
+      width: width * 1.2,
+      height: width * 0.5108,
+      // .4317 ratio
       resizeMode: 'scale',
     },
     imgContainer:{
