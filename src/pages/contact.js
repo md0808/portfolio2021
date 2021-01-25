@@ -29,9 +29,7 @@ const About = () => {
   const classes = useStyles()
 
   const emailCopy = () => {
-    // if (navigator){
       navigator.clipboard.writeText("monica.dixon8@gmail.com")
-    // }
   }
   const openYogaInsta = () => {
     if (typeof window !== `undefined`) {

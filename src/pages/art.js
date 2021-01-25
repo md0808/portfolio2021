@@ -21,7 +21,7 @@ const useStyles = makeStyles(theme => ({
   gallery: {
     maxWidth: 1000,
     marginTop: 30,
-  }
+  },
 }))
 
 
@@ -35,7 +35,7 @@ const Art = () => {
       <Grid container justify="center" alignItems="center" className={classes.text} direction="column">
         <Grid item>
           <Typography color="textPrimary"  className={classes.paragraph} paragraph>
-            These categories seem at odds with each other, but I think the work makes the most sense together.
+            These categories seem at odds with each other, but visually, I think the work makes the most sense together. Just trust me.
           </Typography>  
           <Grid item>
             <Link to="/art-magazine-collage">
@@ -49,22 +49,22 @@ const Art = () => {
             </Grid>  
             <Grid item>
             <Link to="/art-outdoor">
-            <Button color="warning" variant="contained">Outdoor Installations</Button>
+            <Button color="primary" variant="contained">Outdoor Installations</Button>
             </Link>
             </Grid> 
             <Grid item>
             <Link to="/art-2016">
-            <Button color="error" variant="outlined">First year of Residence at with Charlotte Street</Button>
+            <Button color="secondary" variant="contained">First year of Residence at with Charlotte Street</Button>
             </Link>
             </Grid>   
             <Grid item>
             <Link to="/art-temenos">
-            <Button color="success" variant="contained">Temenos (masks and experimental movement workshops) </Button>
+            <Button color="primary" variant="contained">Temenos (masks and experimental movement workshops) </Button>
             </Link>
             </Grid>  
             <Grid item>
             <Link to="/art-2011">
-            <Button color="primary" variant="contained">Final year of art school</Button>
+            <Button color="secondary" variant="contained">Final year of art school</Button>
             </Link>
             </Grid>       
         </Grid>

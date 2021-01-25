@@ -8,19 +8,25 @@ export const mainTheme = createMuiTheme({
         light: "#9891ed",
         main: "#756dd9",
         dark: "#584fc9",
+        contrastText: "#FFF"
+
       },
       secondary: {
         light: "#b5ffe1",
         main: "#a4fcd9",
         dark: "#7dffca",
+        contrastText: "#000"
+
       },
       warning: {
-        light: "#f8fabe",
+        light: "#b0b272",
         main: "#fcffa3",
-        dark: "#f9fc8d",
+        dark: "#fcffb5",
+        contrastText: "#000"
+
       },
       error: {
-        light: "#f8b9fa",
+        light: '#efa3f2',
         main: "#efa3f2",
         dark: "##f561fa",
         contrastText: "#000"
@@ -29,11 +35,15 @@ export const mainTheme = createMuiTheme({
         light: "#b5ffe1",
         main: "#a4fcd9",
         dark: "#7dffca",
+        contrastText: "#000"
+
       },
       success: {
         light: "#b5ffe1",
         main: "#ad7ff3",
         dark: "#7dffca",
+        contrastText: "#000"
+
       },
 
       text: {
@@ -59,9 +69,30 @@ export const mainTheme = createMuiTheme({
         dark: "#584fc9",
       },
       warning: {
-        light: "#f8c0fa",
+        light: "#a772a9",
+        main: "#fcffa3",
+        dark: "#f2b5f4",
+      },
+      warning: {
+        light: "#f8fabe",
+        main: "#fcffa3",
+        dark: "#f9fc8d",
+      },
+      error: {
+        light: '#efa3f2',
         main: "#efa3f2",
-        dark: "#ec81f0",
+        dark: "##f561fa",
+        contrastText: "#000"
+      },
+      info: {
+        light: "#b5ffe1",
+        main: "#a4fcd9",
+        dark: "#7dffca",
+      },
+      success: {
+        light: "#b5ffe1",
+        main: "#ad7ff3",
+        dark: "#7dffca",
       },
       text: {
           primary: "#FFF",
