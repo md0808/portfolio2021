@@ -1,3 +1,4 @@
+import {lazy, Suspense} from 'react'
 import One from '../images/artwork/2011/IMG_1597.jpg'
 import Two from '../images/artwork/2011/IMG_1593.jpg'
 import Three from '../images/artwork/2011/B28_Dixon.jpg'
@@ -9,6 +10,9 @@ import Eight from '../images/artwork/2011/1.jpg'
 import Nine from '../images/artwork/2011/3.jpg'
 import Ten from '../images/artwork/2011/8.jpg'
 import Eleven from '../images/artwork/2011/13.jpg'
+
+
+export const loadedPhotos = One && Two && Three && Four && Five && Six && Seven && Eight && Nine && Ten && Eleven ? true : false
 
 
 

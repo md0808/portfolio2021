@@ -45,8 +45,8 @@ const Movement = () => {
             the poses and movements as reference points for intuitive improvisation when it seems appropriate.
             I am also certified (85hr RPYT) in 
             prenatal yoga, and take great interest in helping women find ease and connection through all
-            stages of pregnancy, and post-natal, including helping those recovering from miscarriage and 
-            pregnancy release.
+            stages of pregnancy, and post-natal stages, including helping those recovering from pregnancies that were not
+             carried to full term.
           </Typography>
         </Grid>
       </Grid>

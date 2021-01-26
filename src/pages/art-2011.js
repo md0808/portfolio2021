@@ -1,4 +1,4 @@
-import React, {useState, useCallback} from "react"
+import React, {useState, useCallback, lazy} from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PageTitle from "../components/pageTitle"
@@ -7,7 +7,7 @@ import Grid from "@material-ui/core/Grid"
 import Typography from "@material-ui/core/Typography"
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import {photos} from '../images/art2011'
+import {photos, loadedPhotos} from '../images/art2011'
 import Link from '../components/link'
 
 
@@ -42,7 +42,7 @@ const Art = () => {
     setCurrentImage(0);
     setViewerIsOpen(false);
   };
-
+  console.log('loaded photos', loadedPhotos)
   return (
     <Layout>
       <SEO title="Art 2011" />
@@ -57,7 +57,11 @@ const Art = () => {
           </Typography>         
         </Grid>
         <Grid item className={classes.gallery}>
-        <Gallery photos={photos} onClick={openLightbox} targetRowHeight={400} />
+          {
+            loadedPhotos? <Typography>Photos are here</Typography>: 
+            <Typography>loading</Typography>
+          }
+      <Gallery photos={photos} onClick={openLightbox} targetRowHeight={400} />
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
