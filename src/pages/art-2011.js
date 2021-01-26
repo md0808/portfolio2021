@@ -56,11 +56,6 @@ const Art = () => {
             Mixed media sculptures and installations from found materials made during my final semester at Kansas City Art Institute.
           </Typography>         
         </Grid>
-        <Grid item className={classes.gallery}>
-          {
-            loadedPhotos? <Typography>Photos are here</Typography>: 
-            <Typography>loading</Typography>
-          }
       <Gallery photos={photos} onClick={openLightbox} targetRowHeight={400} />
       <ModalGateway>
         {viewerIsOpen ? (
