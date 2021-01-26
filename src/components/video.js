@@ -1,5 +1,12 @@
 import React from "react"
-const Video = ({ videoSrcURL, videoTitle, ...props }) => (
+import useWindowDimensions from '../utils/getDimensions'
+
+
+const Video = ({ videoSrcURL, videoTitle, ...props }) => {
+  const { width } = useWindowDimensions();
+  const videoWidth = width < 700 ? width : "700"
+  const videoHeight = width < 700 ? width * 0.57 : "400"
+  return (
   <div className="video">
     <iframe
       src={videoSrcURL}
@@ -9,9 +16,10 @@ const Video = ({ videoSrcURL, videoTitle, ...props }) => (
       webkitallowfullscreen="true"
       mozallowfullscreen="true"
       allowFullScreen
-      width="700"
-      height="400"
+      width={videoWidth}
+      height={videoHeight}
     />
   </div>
 )
+}
 export default Video

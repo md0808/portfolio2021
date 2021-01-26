@@ -33,7 +33,7 @@ const Technology = () => {
           <Typography paragraph color="textPrimary" className={classes.paragrah}>
             I am a frontend developer with <Link to="https://www.bounteous.com/">
               Bounteous
-            </Link>.{" "} I love working with React.js, I spend most of my time working remotely with lots of 
+            </Link>.{" "} My work primarily revolves around apps built with React and React Native. I spend most of my time working remotely with lots of 
             talented people creating web and mobile apps for industry leading companies. In early 2021 I began
             working with Adobe AfterEffects and hope to continue incorporating animation and motion design into
             my work.

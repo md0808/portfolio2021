@@ -8,6 +8,7 @@ import Typography from "@material-ui/core/Typography"
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import {photos} from '../images/memory'
+import Link from '../components/link'
 
 
 const useStyles = makeStyles(theme => ({
@@ -68,7 +69,7 @@ const Memories = () => {
        </Grid>      
        <Grid item justify="center" alignItems="center" >
           <Typography color="textPrimary" paragraph className={[classes.paragraph, classes.text]}>
-            Send me a message and tell me which image is your favorite.
+            <Link to="/contact">Send me a message</Link> and tell me which image is your favorite.
           </Typography>
 
 

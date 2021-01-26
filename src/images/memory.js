@@ -9,7 +9,7 @@ import Eight from '../images/artwork/Memories/DSC06592.jpg'
 import Nine from '../images/artwork/Memories/DSC06748.jpg'
 import StockbridgeTree from '../images/artwork/Memories/IMG_0356.jpg'
 import Caterpillar from '../images/artwork/Memories/IMG_0530.jpg'
-import Fourteen from '../images/artwork/Memories/IMG_0596.jpg'
+// import Fourteen from '../images/artwork/Memories/IMG_0596.jpg'
 import Fifteen from '../images/artwork/Memories/IMG_0685.jpg'
 import CyclePoster from '../images/artwork/Memories/IMG_0851.jpg'
 import Mary from '../images/artwork/Memories/IMG_0937.jpg'
@@ -29,7 +29,7 @@ import ThirtyThree from '../images/artwork/Memories/IMG_3277.jpg'
 import ThirtyFour from '../images/artwork/Memories/IMG_3366.jpg'
 import ThirtyFive from '../images/artwork/Memories/IMG_3401.jpg'
 import ThirtySix from '../images/artwork/Memories/IMG_5503.jpg'
-import ThirtySeven from '../images/artwork/Memories/IMG_5699.jpg'
+// import ThirtySeven from '../images/artwork/Memories/IMG_5699.jpg'
 import ThirtyEight from '../images/artwork/Memories/IMG_8955.jpg'
 import MaineRocks from '../images/artwork/Memories/IMG_9257.jpg'
 import Bavaria from '../images/artwork/Memories/Memory2/bavaria.jpg'
@@ -98,6 +98,13 @@ export const photos = [
         height: 3,
         title: "Bavaria, Germany, 2010"
       },
+
+      {
+        src: DehraPalace,
+        width: 4,
+        height: 3,
+        title: "Dehradun, India, 2014"
+      },
       {
         src: StockbridgeTree,
         width: 3.5,
@@ -144,7 +151,7 @@ export const photos = [
         src: Mary,
         width: 3,
         height: 4,
-        title: "Lamp shop, Barcelona, Spain, 2012"
+        title: "Sagrada Familia, Barcelona, Spain, 2012"
       },
       {
         src: MosquitoNet,
@@ -284,6 +291,25 @@ export const photos = [
 
       },
       {
+        src: Goat,
+        width: 3,
+        height: 4,
+        title: "Auroville, India, 2014"
+      },
+
+      {
+        src: Hampi2,
+        width: 4,
+        height: 3,
+        title: "Hampi, India, 2014"
+      },
+      {
+        src: Mississippi,
+        width: 4.5,
+        height: 3,
+        title: "Mississippi, 2013"
+      },
+      {
         src: Laramie,
         width: 3,
         height: 4,
@@ -320,29 +346,12 @@ export const photos = [
         title: "Jasper, Arkansas 2013"
       },
       {
-        src: ThirtySix,
-        width: 1,
-        height: 1,
-        title: "Mushroom Material Cast, Kansas City 2016"
-      },
-      {
         src: DehraBlue,
         width: 4,
         height: 3,
         title: "Dehradun, India, 2014"
       },
-      {
-        src: SchwaebGate,
-        width: 3,
-        height: 4,
-        title: "Schwäbisch Hall, Germany 2010"
-      },
-      {
-        src: ArkGate,
-        width: 3,
-        height: 4,
-        title: "Jasper, Arkansas 2013"
-      },
+
       {
         src: Window,
         width: 3,
@@ -361,46 +370,6 @@ export const photos = [
         height: 4,
         title: "Missouri Ozarks, 2012"
       },
-      {
-        src: Horse,
-        width: 3,
-        height: 4,
-        title: "West Plains, Missouri 2012"
-      },
-      {
-        src: Bourbon,
-        width: 4.5,
-        height: 3,
-        title: "Bourbon, Missouri 2012"
-      },
-      {
-        src: RhinelandBear,
-        width: 4,
-        height: 3,
-        title: "Rhineland, Missouri 2012"
-      },
-
-      {
-        src: Harper,
-        width: 3,
-        height: 4,
-        title: "Harper Watson, Rhineland, Missouri 2012"
-      },
-
-
-      {
-        src: Dehli,
-        width: 4,
-        height: 3,
-        title: "Old Delhi, India, 2014"
-      },
-
-      {
-        src: DehraPalace,
-        width: 4,
-        height: 3,
-        title: "Dehradun, India, 2014"
-      },
 
       {
         src: Lizard,
@@ -409,86 +378,110 @@ export const photos = [
         title: "Auroville, India, 2014"
       },
       {
-        src: Goat,
-        width: 3,
-        height: 4,
-        title: "Auroville, India, 2014"
-      },
-
-      {
-        src: Hampi2,
-        width: 4,
-        height: 3,
-        title: "Hampi, India, 2014"
-      },
-      {
-        src: Mississippi,
-        width: 4.5,
-        height: 3,
-        title: "Mississippi, 2013"
-      },
-      {
-        src: StKatelijne,
-        width: 4,
-        height: 3,
-        title: "Sint Katelijne-Waver, Belgium 2012"
-      },
-      {
-        src: Eight,
-        width: 4,
-        height: 3,
-        title: "Hamburg, Germany 2010"
-      },
-
-      {
-        src: ThirtyTwo,
-        width: 3,
-        height: 4,
-        title: "Hampi, India 2014"
-
-      },
-      {
-        src: Four,
-        width: 3.3,
-        height: 4,
-        title: "Schwäbisch Hall, Germany, 2010"
-      },
-
-      {
         src: TwentyFour,
         width: 3,
         height: 4,
         title: "Julian in Stockbridge, Massachusetts, 2019"
       },
       {
-        src: Leipzig,
-        width: 4,
-        height: 3,
-        title: "Leipzig, Germany, 2010"
-      },    
-      {
-        src: Iguana,
-        width: 4,
-        height: 3,
-        title: "Columbia, Missouri 2012"
-      },
-      {
-        src: ThirtySeven,
+        src: Horse,
         width: 3,
         height: 4,
-        title: "Northeast, Kansas City, 2016"
+        title: "West Plains, Missouri 2012"
       },
       {
-        src: Fifteen,
-        width: 2.5,
+        src: Harper,
+        width: 3,
         height: 4,
-        title: "Avignon, France, 2012"
-
+        title: "Harper Watson, Rhineland, Missouri 2012"
       },
       {
-        src: Fourteen,
-        width: 4.25,
+        src: RhinelandBear,
+        width: 4,
         height: 3,
-        title: "St. Tropez, 2012"
+        title: "Rhineland, Missouri 2012"
       },
+      {
+        src: Mush,
+        width: 3,
+        height: 4,
+        title: "Great Smokey Mountains, Tennessee, 2014"
+      },
+      {
+        src: ThirtySix,
+        width: 1,
+        height: 1,
+        title: "Mushroom Material Cast, Kansas City 2016"
+      },
+      {
+        src: Dehli,
+        width: 4,
+        height: 3,
+        title: "Old Delhi, India, 2014"
+      },
+    //   {
+    //     src: StKatelijne,
+    //     width: 4,
+    //     height: 3,
+    //     title: "Sint Katelijne-Waver, Belgium 2012"
+    //   },
+    //   {
+    //     src: Eight,
+    //     width: 4,
+    //     height: 3,
+    //     title: "Hamburg, Germany 2010"
+    //   },
+
+    //   {
+    //     src: ThirtyTwo,
+    //     width: 3,
+    //     height: 4,
+    //     title: "Hampi, India 2014"
+
+    //   },
+    //   {
+    //     src: Four,
+    //     width: 3.3,
+    //     height: 4,
+    //     title: "Schwäbisch Hall, Germany, 2010"
+    //   },
+    //   {
+    //     src: Fifteen,
+    //     width: 2.5,
+    //     height: 4,
+    //     title: "Avignon, France, 2012"
+
+    //   },
+
+    //   {
+    //     src: Leipzig,
+    //     width: 4,
+    //     height: 3,
+    //     title: "Leipzig, Germany, 2010"
+    //   },    
+    //   {
+    //     src: Iguana,
+    //     width: 4,
+    //     height: 3,
+    //     title: "Columbia, Missouri 2012"
+    //   },
+    //   {
+    //     src: ThirtySeven,
+    //     width: 3,
+    //     height: 4,
+    //     title: "Northeast, Kansas City, 2016"
+    //   },
+
+    //   {
+    //     src: Bourbon,
+    //     width: 4.5,
+    //     height: 3,
+    //     title: "Bourbon, Missouri 2012"
+    //   },
+    //   {
+    //     src: Fourteen,
+    //     width: 4.25,
+    //     height: 3,
+    //     title: "St. Tropez, 2012"
+    //   },
 ];
