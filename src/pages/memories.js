@@ -19,6 +19,7 @@ const useStyles = makeStyles(theme => ({
   paragraph: {
     maxWidth: 600,
   },
+  
   gallery: {
     maxWidth: 1000,
     marginTop: 30,
@@ -63,6 +64,14 @@ const Memories = () => {
                 From The Nature of Personal Reality
                 by Jane Roberts
           </Typography>
+
+       </Grid>      
+       <Grid item justify="center" alignItems="center" >
+          <Typography color="textPrimary" paragraph className={[classes.paragraph, classes.text]}>
+            Send me a message and tell me which image is your favorite.
+          </Typography>
+
+
        </Grid>      
         <Grid item className={classes.gallery}>
           <Gallery photos={photos} onClick={openLightbox} targetRowHeight={400} />
