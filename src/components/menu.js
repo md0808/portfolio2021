@@ -69,7 +69,6 @@ const menuOptions = [
     link: "/about",
   },
   { title: "Contact", icon: <Fingerprint color="primary" />, link: "/contact" }, 
-  { title: "Home", icon: <Home color="primary" />, link: "/" },
 ]
 
 const StyledMenuItem = withStyles(theme => ({
