@@ -54,7 +54,11 @@ const Technology = () => {
           </Typography>
           </Grid>
           <Grid item direction= "row" justify="flex-start">
+          <Video
+            videoSrcURL="https://www.youtube.com/embed/lH3ymeS5RHo"
 
+            videoTitle="Super Angelic Magic Energy Powers II"
+            />
           <Video
             videoSrcURL="https://www.youtube.com/embed/jFCmUQgQurc"
             videoTitle="Super Angelic Magic Energy Powers"
