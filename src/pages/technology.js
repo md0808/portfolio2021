@@ -48,15 +48,10 @@ const Technology = () => {
           <Link to="/20201228" color="primary">
               Here's what I used for this site. </Link>  
           </Typography>
-          <Typography paragraph color="textPrimary" className={classes.paragrah}>
-            In early 2021 I started learning Adobe AfterEffects for creating animation and motion graphics.
-            Below are some practice animations.
-          </Typography>
           </Grid>
           <Grid item direction= "row" justify="flex-start">
           <Video
-            videoSrcURL="https://www.youtube.com/embed/lH3ymeS5RHo"
-
+            videoSrcURL="https://www.youtube.com/embed/KOk6nHbJmAE"
             videoTitle="Super Angelic Magic Energy Powers II"
             />
           <Video
